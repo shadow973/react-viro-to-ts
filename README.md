@@ -1,4 +1,4 @@
-# react-viro-t-dts
+# react-viro-to-ts
 
 Generate typescript defintions for react-viro. Exports rudimentary type definitions for react-viro base on the propTypes for all components.
 
