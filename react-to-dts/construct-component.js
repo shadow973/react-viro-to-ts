@@ -9,7 +9,6 @@ const getPropsInterface = function(component, props) {
   let propStr = `interface ${component}Props {\n`;
 
   for(const [propName, definition] of Object.entries(props || {})) {
-
     if(definition.description) {
       propStr += `\t/* ${definition.description.replace(/\n/g, "\n\t")} */\n`;
     }
@@ -17,7 +16,6 @@ const getPropsInterface = function(component, props) {
     propStr += convertPropType(definition.type || {});
     propStr += "\n";
   }
-
   propStr += "}\n";
   return propStr;
 }

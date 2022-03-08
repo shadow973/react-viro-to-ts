@@ -10,11 +10,9 @@ const convertMethods = function(methods) {
     if(method.docblock) {
       retStr += `\t/* ${method.docblock.replace(/\n/g, "\n\t")} */\n`;
     }
-
     if(method.modifiers.length) {
 
     }
-
     let returnType = 'any';
     if(method.modifiers.length && method.modifiers.indexOf("async") > -1) {
 

@@ -35,5 +35,4 @@ const convertPropType = function (propType) {
  }
 };
 
-
 module.exports = convertPropType;
